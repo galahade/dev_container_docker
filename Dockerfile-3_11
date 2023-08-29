@@ -8,7 +8,7 @@ FROM mcr.microsoft.com/devcontainers/python:0-${VARIANT}
 RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
     # Remove imagemagick due to https://security-tracker.debian.org/tracker/CVE-2019-10131
     && apt-get purge -y imagemagick imagemagick-6-common \
-    && apt-get -y install --no-install-recommends git
+    && apt-get -y install --no-install-recommends git iputils-ping
 
 ENV LANG=C.UTF-8
 ENV LC_ALL=C.UTF-8

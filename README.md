@@ -14,8 +14,8 @@
   * 构建命令：
 
     ```bash
-    docker build --tag galahade/python-dev-container .
-    docker build ---no-cache --tag galahade/python-dev-container .
+    docker build -f Dockerfile-3_11 --tag galahade/python-dev-container .
+    docker build -f Dockerfile-3_11 --no-cache --tag galahade/python-dev-container .
     docker tag galahade/python-dev-container galahade/python-dev-container:v0.1
     ```
 
@@ -28,8 +28,8 @@
   * 构建命令：
 
     ```bash
-    docker build --tag galahade/python-dev-container-tqsdk2 .
-    docker build ---no-cache --tag galahade/python-dev-container-tqsdk2 .
+    docker build -f Dockerfile-tqsdk2 --tag galahade/python-dev-container-tqsdk2 .
+    docker build -f Dockerfile-tqsdk2 --no-cache --tag galahade/python-dev-container-tqsdk2 .
     docker tag galahade/python-dev-container-tqsdk2 galahade/python-dev-container-tqsdk2:v0.1
     ```
 
